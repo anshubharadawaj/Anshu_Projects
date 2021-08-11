@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block Content %}
+<div class = "mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/anshu.jpeg' %}" alt="ProfilePic"
+        class="img-thumb-nail width=250px" height="150px">
+    </div>
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+   <h1 class="font-weight-bold st-font">Hello,</h1>
+<div class="px-4" style="line-height:2rem;">
+    <p style="text-indent:100px;"> I am <b class="text-warning">Anshu Jha</b> Python developer with 2+ years of experience in <b class="text-warning">Software development</b>
+Experience in Design, Development, Testing, Enhancement, and Maintenance of Applications.
+Experience in the development of applications/tools using Python for 2 years.Good Experience in error and
+exceptional handling.Good Experience in debugging the issues using debuggers like pdb.
+ <p>Experience with Version Control, ideally GIT.
+Guiding and helping the team members with the challenges faced during the project development process and problem solving.
+Have flexibility and ability to learn and use new technologies and to work in a team environment as wells as independently to get things done.
+Good Experience in the development of applications in a Linux Environment.Having Good Experience in Object-Oriented Concepts with Python.
+Good Experience in Django web development.Experience in the development of REST API using Django Rest Framework.</p>
+<p>Good knowledge in various phases of SDLC Requirement Analysis, Design, Development, and Testing on various Development and Enhancement Projects.
+    Familiarity with development best practices such as code reviews and unit testing.Good knowledge of MongoDB. Good Knowledge of Agile development.</p>
+</p>
+</div>
+    <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+     <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+</div>
+{% endblock Content%}
