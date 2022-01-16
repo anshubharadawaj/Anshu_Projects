@@ -1,6 +1,6 @@
 # Anshu_Projects- There are three projects.
 
-1) E-Commerce Projects- This is an E-Commerce Project in which a person can buy anything that is displayed, such as tops, bottoms, mobile phones, laptop computers, and so on. 
+1)E-Commerce Projects- This is an E-Commerce Project in which a person can buy anything that is displayed, such as tops, bottoms, mobile phones, laptop computers, and so on. 
 Everyone must first register, then login, and then add items to their cart.
 
 Tools and technologies - Python, Django, Django inbuilt authentication, Html, css, javascript, bootstrap, database-inbuilt in django.
