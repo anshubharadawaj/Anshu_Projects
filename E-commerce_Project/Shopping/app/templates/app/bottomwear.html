@@ -1,0 +1,35 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Bottomwear{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+ <div class="row">
+  <div class="col-sm-3">
+   <div class="list-group">
+  <a href="{% url 'bottomwear'  %}" class="list-group-item list-group-item-action active">All BottomWear</a>
+  <a href="{% url 'bottomweardata' 'suzy' %}" class="list-group-item list-group-item-action">suzy</a>
+  <a href="{% url 'bottomweardata' 'pepe' %}" class="list-group-item list-group-item-action">pepe</a>
+<!--  <a href="{% url 'mobiledata' 'below' %}" class="list-group-item list-group-item-action">Below 10000</a>-->
+<!--  <a href="{% url 'mobiledata' 'above' %}" class="list-group-item list-group-item-action">Above 10000</a>-->
+
+</div>
+  </div>
+  <div class="col-sm-8">
+      <div class="row">
+          {% for b in btmwear %}
+          <div class="col-sm-4 text-center mb-4">
+              <a href="{% url 'product-detail' b.id %}" class="btn"><div class="item">
+                  <img src="{{b.product_image.url}}" height="300" alt="" class="">
+              <div class="fw-bold">{{b.title}}</div>
+              <div class="fw-bold">{{b.description}}</div>
+              <div class="fw-bold">Rs. {{b.discounted_price}}
+                  <small class="fw-light text-decoration-line-through">{{b.selling_price}}</small> </div>
+              </div>
+          </a>
+          </div>
+            {% endfor %}
+      </div>
+  </div>
+ </div>
+</div>
+{% endblock main-content %}
